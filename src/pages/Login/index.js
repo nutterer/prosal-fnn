@@ -1,15 +1,9 @@
-import React, { useState } from 'react';
-import { 
-    Grid, 
-    GridItem,
-    Center,
-    Box,
-    Image
-} from '@chakra-ui/react'
+import React, { useState } from 'react'
+import { Grid, GridItem, Center, Box, Image } from '@chakra-ui/react'
 // import { Button, Form, Input, Checkbox  } from 'antd'
 
 // import { useForm } from 'react-hook-form';
-import { Navigate, useLocation, useNavigate } from 'react-router-dom';
+import { Navigate, useLocation, useNavigate } from 'react-router-dom'
 // import { useAuth } from '../../hooks'
 
 import Logo from '../../psLogo.png'
@@ -19,55 +13,66 @@ import allUser from '../../mock/user.json'
 
 export const Login = () => {
   const adminUser = {
-    username: "admin",
-    password: "123456"
+    username: 'admin',
+    password: '123456'
   }
- 
-  const [ user, setUser ] = useState({ username:"", password:"" })
-  const [ error, setError ] = useState("")
+
+  const [user, setUser] = useState({ username: '', password: '' })
+  const [error, setError] = useState('')
   const navigate = useNavigate()
 
-  const Login = async(detail) => {
-    const getUser = allUser.map(rs => {return rs}).find(rs => rs.username === detail.username)
-    console.log(getUser);
-    console.log(detail);
-    if (detail.username === adminUser.username && detail.password === adminUser.password ){
-      console.log('Logged in');
-      setUser({
-        username:"user-user"+" "+detail.username
+  const Login = async detail => {
+    const getUser = allUser
+      .map(rs => {
+        return rs
       })
-      console.log(user);
+      .find(rs => rs.username === detail.username)
+    console.log(getUser)
+    console.log(detail)
+    if (
+      detail.username === adminUser.username &&
+      detail.password === adminUser.password
+    ) {
+      console.log('Logged in')
+      setUser({
+        username: 'user-user' + ' ' + detail.username
+      })
+      console.log(user)
       navigate('/')
-    }else{
-      console.log("Fail");
+    } else {
+      console.log('Fail')
     }
   }
 
-  
-    // const { login } = useAuth()
-    // const onFinish = async (values) => {
-    //     const { username, password } = values
-    //     login(username , password)
-    //     console.log('Success:', values);
-    //   };
-    
-    //   const onFinishFailed = (errorInfo) => {
-    //     console.log('Failed:', errorInfo);
-    //   };
-  return (
-      <>
+  // const { login } = useAuth()
+  // const onFinish = async (values) => {
+  //     const { username, password } = values
+  //     login(username , password)
+  //     console.log('Success:', values);
+  //   };
 
-        <Grid padding={20} h='100vh' alignItems='center'  templateColumns='repeat(2,1fr)' gap={4}>
-            <GridItem >
-                <Center>
-                    <Image src={Logo} objectFit='fill' alt="Logo" />
-                </Center>
-            </GridItem>
-            <GridItem >
-                <Center>
-                    <Box>
-                      <LoginForm Login={Login} error={error}/>
-                        {/* <Form
+  //   const onFinishFailed = (errorInfo) => {
+  //     console.log('Failed:', errorInfo);
+  //   };
+  return (
+    <>
+      <Grid
+        padding={20}
+        h='100vh'
+        alignItems='center'
+        templateColumns='repeat(2,1fr)'
+        gap={4}
+      >
+        <GridItem>
+          <Center>
+            <Image src={Logo} objectFit='fill' alt='Logo' />
+          </Center>
+        </GridItem>
+        <GridItem>
+          <Center>
+            <Box>
+              <LoginForm Login={Login} error={error} />
+              {/* <Form
                             name="login"
                             labelCol={{ span: 8 }}
                             wrapperCol={{ span: 16 }}
@@ -105,12 +110,12 @@ export const Login = () => {
                             </Form.Item> 
                            
                         </Form> */}
-                    </Box>
-                </Center>
-            </GridItem>
-        </Grid>
-      </>
-  );
+            </Box>
+          </Center>
+        </GridItem>
+      </Grid>
+    </>
+  )
 }
 
-export default Login;
+export default Login
