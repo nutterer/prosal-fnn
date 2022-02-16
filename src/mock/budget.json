@@ -26,5 +26,99 @@
     "startbudget": 155334654,
     "totalbudget": 98763,
     "balance": 789
+  },
+  {
+    "year": "2559",
+    "department": "วิทยาการคอมพิวเตอร์",
+    "startbudget": 56768645,
+    "totalbudget": 98763,
+    "balance": 789
+  },
+  {
+    "year": "2560",
+    "department": "วิทยาการคอมพิวเตอร์",
+    "startbudget": 155334654,
+    "totalbudget": 98763,
+    "balance": 789
+  },{
+    "year": "2559",
+    "department": "ภูมิสารสนเทศศาสตร์",
+    "startbudget": 56768645,
+    "totalbudget": 98763,
+    "balance": 789
+  },
+  {
+    "year": "2560",
+    "department": "ภูมิสารสนเทศศาสตร์",
+    "startbudget": 155334654,
+    "totalbudget": 98763,
+    "balance": 789
+  },
+  {
+    "year": "2559",
+    "department": "วิศวกรรมคอมพิวเตอร์",
+    "startbudget": 56768645,
+    "totalbudget": 98763,
+    "balance": 789
+  },
+  {
+    "year": "2560",
+    "department": "วิศวกรรมคอมพิวเตอร์",
+    "startbudget": 155334654,
+    "totalbudget": 98763,
+    "balance": 789
+  },
+  {
+    "year": "2559",
+    "department": "วิศวกรรมซอฟแวร์",
+    "startbudget": 56768645,
+    "totalbudget": 98763,
+    "balance": 789
+  },
+  {
+    "year": "2560",
+    "department": "วิศวกรรมซอฟแวร์",
+    "startbudget": 155334654,
+    "totalbudget": 98763,
+    "balance": 789
+  },{
+    "year": "2559",
+    "department": "วิศวกรรมสารสนเทศและการสื่อสาร",
+    "startbudget": 56768645,
+    "totalbudget": 98763,
+    "balance": 789
+  },
+  {
+    "year": "2560",
+    "department": "วิศวกรรมสารสนเทศและการสื่อสาร",
+    "startbudget": 155334654,
+    "totalbudget": 98763,
+    "balance": 789
+  },{
+    "year": "2559",
+    "department": "คอมพิวเตอร์กราฟฟิกและมัลติมีเดีย",
+    "startbudget": 56768645,
+    "totalbudget": 98763,
+    "balance": 789
+  },
+  {
+    "year": "2560",
+    "department": "คอมพิวเตอร์กราฟฟิกและมัลติมีเดีย",
+    "startbudget": 155334654,
+    "totalbudget": 98763,
+    "balance": 789
+  },{
+    "year": "2559",
+    "department": "สำนักงานคณะ",
+    "startbudget": 56768645,
+    "totalbudget": 98763,
+    "balance": 789
+  },
+  {
+    "year": "2560",
+    "department": "สำนักงานคณะ",
+    "startbudget": 155334654,
+    "totalbudget": 98763,
+    "balance": 789
   }
 ]
